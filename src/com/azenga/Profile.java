@@ -25,14 +25,13 @@ public class Profile {
 		this.nationality = nationality;
 		this.email = email;
 		this.interests = interests;
-		
-		//Initialize the friends ArrayList
+
+		// Initialize the friends ArrayList
 		friends = new ArrayList<Profile>();
 
 	}
 
 	// Getters
-
 	public String getTown() {
 		return town;
 	}
@@ -65,26 +64,35 @@ public class Profile {
 	public void setInterests(String[] interests) {
 		this.interests = interests;
 	}
-	
+
 	public String getDateOfBirth() {
 		return String.format("%02d/%02d/%04d", day, month, year);
 	}
-	
+
 	public void addFriend(Profile profile) {
 		friends.add(profile);
 	}
-	
+
 	public Profile getFriend(int posistion) {
 		return friends.get(posistion);
 	}
-	
+
 	public int getNumberOgFriends() {
 		return friends.size();
 	}
-	
+
+	public String getEmail() {
+		return this.email;
+	}
+
+	public String getName() {
+		return String.format("%s %s", firstName, lastName);
+	}
+
 	@Override
 	public String toString() {
-		return String.format("%s was born in %s has %d friends and loves %s", firstName, getDateOfBirth(), friends.size(), interests[0]);
+		return String.format("%s was born in %s has %d friends and loves %s", firstName, getDateOfBirth(),
+				friends.size(), interests[0]);
 	}
-	
+
 }
