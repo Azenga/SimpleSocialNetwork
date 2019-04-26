@@ -1,0 +1,5 @@
+Simon,Cowell,10,10,1975,PA,USA,American,simoncowell@gmail.com,Judging;Laughing;Commedying
+Barrack,Obama,04,06,1960,New York,USA,American,obama@gmail.com,Leading;Playing;Dancing
+Rasmus,Rudolf,05,10,1950,Michigan,USA,American,rasmus@gmail.com,Coding;Mentoring;Playing
+Elon,Musk,06,06,1975,New York,USA,American,elon@gmail.com,Leading;Playing;Dancing
+Guido,van Rossum,31,01,1956,Haarlem,Netherlands,Mholanzi,guidovamrossum@gmail.com,Coding;Business;Developing
