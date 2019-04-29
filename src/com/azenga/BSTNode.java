@@ -29,7 +29,13 @@ public class BSTNode {
 	public BSTNode getR() {
 		return r;
 	}
-	
-	
 
 }
+
+//I is exactly as instructed in the pdf question
+/*
+ * Contains a node and link to its right and left nodes 
+ * Used for sorting the profile in alphabetical order
+ * 
+ * 
+ */

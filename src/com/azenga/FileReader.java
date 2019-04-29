@@ -9,7 +9,7 @@ import java.util.List;
 
 public class FileReader {
 	
-	private static List<Profile> profileList = new ArrayList<Profile>();
+	public static List<Profile> profileList = new ArrayList<Profile>();
 
 	public FileReader() {
 	}

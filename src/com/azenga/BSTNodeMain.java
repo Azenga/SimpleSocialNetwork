@@ -2,17 +2,18 @@ package com.azenga;
 
 public class BSTNodeMain {
 	public static void main(String[] args) {
-		Profile me = new Profile("Azenga", "Kevin", 10, 6, 1995, "Vihiga", "Kenya", "Kenyan", "toomuch573@gmail.com", new String[] {"Programming", "Helping"});
-		Profile maggy = new Profile("Mumbua", "Maggy", 24, 10, 1997, "Machakos", "Kenya", "Kenyan", "cellnmagy4@gmail.com", new String[] {"Travelling", "Sleeping"});
-		Profile kanini = new Profile("Kiema", "Catherine", 2, 7, 1998, "Makueni", "Kenya", "Kenyan", "catherine001@gmail.com", new String[] {"Data Analysis", "Sleeping"});
+		Profile kevinProfile = new Profile("Azenga", "Kevin", 10, 6, 1995, "Vihiga", "Kenya", "Kenyan", "toomuch573@gmail.com", new String[] {"Programming", "Helping"});
+		Profile maggyProfile = new Profile("Mumbua", "Maggy", 24, 10, 1997, "Machakos", "Kenya", "Kenyan", "cellnmagy4@gmail.com", new String[] {"Travelling", "Sleeping"});
+		Profile cateProfile = new Profile("Kiema", "Catherine", 2, 7, 1998, "Makueni", "Kenya", "Kenyan", "catherine001@gmail.com", new String[] {"Data Analysis", "Sleeping"});
 		
-		BSTNode one = new BSTNode(me);
-		BSTNode two = new BSTNode(maggy);
-		BSTNode three = new BSTNode(kanini);
+		BSTNode nodeOne = new BSTNode(kevinProfile);
+		BSTNode nodeTwo = new BSTNode(cateProfile);
+		BSTNode nodeThree = new BSTNode(maggyProfile);
 		
-		one.setL(two);
-		one.setR(three);
+		nodeOne.setL(nodeTwo);
+		nodeOne.setR(nodeThree);
 		
-		System.out.println(one.getL().getProfile());
+		System.out.println("Left Node: " + nodeOne.getL().getProfile());
+		System.out.println("Right Node: " + nodeOne.getR().getProfile());
 	}
 }

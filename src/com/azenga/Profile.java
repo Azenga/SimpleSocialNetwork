@@ -77,7 +77,7 @@ public class Profile {
 		return friends.get(posistion);
 	}
 
-	public int getNumberOgFriends() {
+	public int getNumberOfFriends() {
 		return friends.size();
 	}
 
@@ -85,14 +85,16 @@ public class Profile {
 		return this.email;
 	}
 
+	//Return the first and last name of the profile to use in the connections
 	public String getName() {
 		return String.format("%s %s", firstName, lastName);
 	}
-
+	
+	//Overriding the toString method for printing profile details on the screen
 	@Override
 	public String toString() {
-		return String.format("%s was born in %s has %d friends and loves %s", firstName, getDateOfBirth(),
-				friends.size(), interests[0]);
+//		return String.format("%s was born in %s has %d friends and loves %s", firstName, getDateOfBirth(),friends.size(), interests[0]);
+		return String.format("%s %s", firstName, lastName);
 	}
 
 }
